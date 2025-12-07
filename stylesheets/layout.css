@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+body{
+    width: 1440px;
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    font-family: "Speckqtograph_Handwriting";
+}
+.Play{
+    font-weight: 700;
+  font-style: normal;
+  font-size: 200px;
+  position: absolute;
+  top: 1330px;
+  left: 40px;
+  color:#C7AD80;  
+}
