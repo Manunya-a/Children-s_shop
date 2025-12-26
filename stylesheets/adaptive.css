@@ -1,21 +1,20 @@
-  html, body {
+  /* Общие стили */
+html, body {
     font-family: "Groboldov";
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-@media screen and (min-width: 320px) and (max-width: 768px){
-    .firstSection {
-      flex-direction: column;
+}
+  @media (max-width: 430px){
+.firstSection {
   display: flex;
+  flex-direction: column;
   padding: 0vw 0vw;
-  width: 100%;
+  width: 50%;
    align-items: center;
     position: relative;
     vertical-align: middle;
     overflow: hidden;
-       justify-content: center;
-      align-items: center;
   border: 1.5vw solid #925948;
 }
 .scene {
@@ -32,25 +31,42 @@
     animation: moveTrain 20s linear infinite; 
     
 }
+@keyframes moveTrain {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+
+        transform: translateX(40%);
+    }
+  }@keyframes marquee{
+    0% {
+        transform: translateX(0);
+    }
+     100% {
+        transform: translateX(-50%);
+    }
+}
 .secondSection {
   display: flex;
   flex-direction: column;
-  width: 100%;
   
 }
 .container-left {
     display: flex; 
+    flex-direction: column;
     border: 1.5vw solid #925948;
     flex-wrap: wrap; 
-    width: 100%;
+    width: 50%;
 }
 .container-right {
-  width: 100%;
+  width: 50%;
 }
 .shelf-item {
     flex: 1; 
     padding: 20vw 0vw;
     border: 1.5vw solid #925948;  
+     width: 50%
 }
 
 .shelf-item1 {
@@ -73,5 +89,88 @@
     position: relative;
     border: 1.5vw solid #925948; 
     }
+  }
+  @media screen and (min-width: 320px) and (max-width: 768px){
+    .firstSection {
+  display: flex;
+  padding: 0vw 0vw;
+  width: 100%;
+   align-items: center;
+    position: relative;
+    vertical-align: middle;
+    overflow: hidden;
+  border: 1.5vw solid #925948;
+}
+.scene {
+    width: 100%;
+    height: 25vw; 
+    overflow: hidden; /* Скрывает части изображения вне области просмотра */
+    position: relative;
+   
+}
+.train-image {
+    position: absolute;
+    bottom: 0px; 
+    height: 20vw; 
+    animation: moveTrain 20s linear infinite; 
+    
+}
+@keyframes moveTrain {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
 
-   }
+        transform: translateX(40%);
+    }
+  }@keyframes marquee{
+    0% {
+        transform: translateX(0);
+    }
+     100% {
+        transform: translateX(-50%);
+    }
+}
+.secondSection {
+  display: flex;
+
+  
+}
+.container-left {
+    display: flex; 
+  
+    border: 1.5vw solid #925948;
+    flex-wrap: wrap; 
+    width: 50%;
+}
+.container-right {
+  width: 50%;
+}
+.shelf-item {
+    flex: 1; 
+    padding: 20vw 0vw;
+    border: 1.5vw solid #925948;  
+     width: 50%
+}
+
+.shelf-item1 {
+  padding: 20vw 0vw;
+    position: relative;
+    border: 1.5vw solid #925948; 
+    }
+.shelf-item2 {
+  padding: 20vw 0vw;
+    position: relative;
+    border: 1.5vw solid #925948; 
+    }
+.shelf-item3 {
+  padding: 20vw 0vw;
+    position: relative;
+    border: 1.5vw solid #925948; 
+    }
+    .shelf-item1 {
+  padding: 20vw 0vw;
+    position: relative;
+    border: 1.5vw solid #925948; 
+    }
+  }
