@@ -1,7 +1,6 @@
   @media (max-width: 430px) {
     .firstSection {
-      height: 11vw;
-      background-color: #FF0000;
+      height: 10vw;
       position: relative;
       width: 100%;
       display: flex;
