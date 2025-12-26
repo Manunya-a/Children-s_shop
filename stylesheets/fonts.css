@@ -1,17 +1,17 @@
 @font-face {
-    font-family: "Speckqtograph_Handwriting";
+    font-family: "Speckqtograph Handwriting";
     src: url("..fonts/SpeckqtographHandwriting-Black.ttf") format("truetype");
     font-style: normal;
     font-weight: 900;
 }
 @font-face {
-    font-family: "Speckqtograph_Handwriting";
+    font-family: "Speckqtograph Handwriting";
     src: url("..SpeckqtographHandwriting-Bold.ttf") format("truetype");
     font-style: normal;
     font-weight: 700;
 }
 @font-face {
-    font-family: "Speckqtograph_Handwriting";
+    font-family: "Speckqtograph Handwriting";
     src: url("..fonts/SpeckqtographHandwriting-Regular.ttf") format("truetype");
     font-style: normal;
     font-weight: 400;

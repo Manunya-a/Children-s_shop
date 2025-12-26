@@ -1,22 +1,89 @@
-*{
-    margin: 0;
-    padding: 0; 
-    box-sizing: border-box;
+
+  * {
+  box-sizing: border-box;
 }
-body{
-    width: 1440px;
-    display: block;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    font-family: "Speckqtograph_Handwriting";
+body {
+  display: block;
+   background-color: #FFE693;
+  position: relative;
+  overflow-x: hidden; 
+  align-items: center; 
+  flex-direction: column;  
+  height: auto;
+  font-family: "Speckqtograph Handwriting", Arial, Helvetica, sans-serif;
 }
-.Play{
-    font-weight: 700;
-  font-style: normal;
-  font-size: 200px;
+/*body::after {
+  content: '';
   position: absolute;
-  top: 1330px;
-  left: 40px;
-  color:#C7AD80;  
+  top: 0;
+  left: 0;
+  background-image: url('../images/Fon1.png');
+  width: 1280px;
+  height: 1600px;
+  opacity: 0.2;
+}*/ 
+.firstSection {
+  display: flex;
+  padding: 0vw 0vw;
+  width: 100%;
+   align-items: center;
+    position: relative;
+    vertical-align: middle;
+    overflow: hidden;
+  border: 1.5vw solid #925948;
 }
+.scene {
+    width: 100%;
+    height: 150px; 
+    overflow: hidden; /* Скрывает части изображения вне области просмотра */
+    position: relative;
+   
+}
+.train-image {
+    position: absolute;
+    bottom: 0px; 
+    height: 100px; 
+    animation: moveTrain 25s linear infinite; 
+    
+}
+.secondSection {
+  display: flex;
+  
+}
+.container-left {
+    display: flex; 
+    border: 1.5vw solid #925948;
+    flex-wrap: wrap; 
+    width: 50%;
+}
+.container-right {
+  width: 50%;
+}
+.shelf-item {
+    flex: 1; 
+    padding: 20vw 0vw;
+    border: 1.5vw solid #925948;  
+}
+
+.shelf-item1 {
+  padding: 20vw 0vw;
+    position: relative;
+    border: 1.5vw solid #925948; 
+    }
+.shelf-item2 {
+  padding: 20vw 0vw;
+    position: relative;
+    border: 1.5vw solid #925948; 
+    }
+.shelf-item3 {
+  padding: 20vw 0vw;
+    position: relative;
+    border: 1.5vw solid #925948; 
+    }
+    .shelf-item1 {
+  padding: 20vw 0vw;
+    position: relative;
+    border: 1.5vw solid #925948; 
+    }
+
+
