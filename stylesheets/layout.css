@@ -8,7 +8,6 @@ body {
   position: relative;
   overflow-x: hidden; 
   flex-direction: column;  
-  height: auto;
   font-family: "Speckqtograph Handwriting", Arial, Helvetica, sans-serif;
 }
 /*body::after {
@@ -57,6 +56,65 @@ body {
 }
 .container-right {
   width: 50%;
+}
+.square {
+  width: 60vw ;
+  height: 40vw;
+  bottom: -86vw; 
+      position: relative;
+  background-color: #925948;
+}
+.flag1 {
+  position: absolute;
+  width: 47vw;
+  left: 1.5vw;
+  margin-top: 45vw;
+   overflow: hidden;
+  transition: transform 5s alternate; 
+}
+.flag1:hover {
+  animation: flag1_color 5s infinite alternate;
+}
+@keyframes flag1_color {
+  0% {filter: hue-rotate(0deg) brightness(1) saturate(1);}
+  25% {filter: hue-rotate(90deg) brightness(1.2) saturate(1.2);}
+  50% {filter: hue-rotate(180deg) brightness(1) saturate(1);}
+  75% {filter: hue-rotate(270deg) brightness(0.8) saturate(0.8);}
+  100% {filter: hue-rotate(360deg) brightness(1) saturate(1);}
+}
+.Child{
+   position: absolute;
+  margin-top: 45vw;
+   overflow: hidden;
+   width: 70vw;  /* Ширина ОДНОГО кадра (например, 50px) */
+  height: 80vw; /* Высота кадра */
+  background-repeat: no-repeat;
+   animation: manual-frames 1s infinite linear; 
+}
+@keyframes manual-frames {
+  /* 6 кадров, каждый занимает примерно 16.66% времени анимации */
+  
+  0% { 
+    background-position: 0px 0px; /* Кадр 1 (Начало) */
+  }
+  16.66% { 
+    background-position: -50px 0px; /* Кадр 2 */
+  }
+  33.32% { 
+    background-position: -100px 0px; /* Кадр 3 */
+  }
+  49.98% { 
+    background-position: -150px 0px; /* Кадр 4 */
+  }
+  66.64% { 
+    background-position: -200px 0px; /* Кадр 5 */
+  }
+  83.3% { 
+    background-position: -250px 0px; /* Кадр 6 */
+  }
+  100% { 
+    background-position: -300px 0px; /* Возврат к началу цикла */
+  }
 }
 .shelf-item {
     flex: 1; 
