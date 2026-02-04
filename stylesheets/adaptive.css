@@ -1,13 +1,19 @@
-  /* Общие стили */
-
-@media (max-width: 430px){
+@media (max-width: 430px) {
+.body {
+  box-sizing: border-box;
+  display: block;
+   background-color: #FFE693;
+  position: relative;
+  overflow-x: hidden; 
+  flex-direction: column;  
+  font-family: "Speckqtograph Handwriting", Arial, Helvetica, sans-serif;
+}
 .firstSection {
   display: flex;
-  flex-direction: column;
   padding: 0vw 0vw;
   width: 100%;
+   align-items: center;
     position: relative;
-    vertical-align: middle;
     overflow: hidden;
   border: 1.5vw solid #925948;
 }
@@ -15,7 +21,8 @@
     width: 100%;
     height: 25vw; 
     overflow: hidden; /* Скрывает части изображения вне области просмотра */
-    position: relative; 
+    position: relative;
+   
 }
 .train-image {
     position: absolute;
@@ -24,78 +31,283 @@
     animation: moveTrain 20s linear infinite; 
     
 }
-@keyframes moveTrain {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-
-        transform: translateX(40%);
-    }
-  }@keyframes marquee{
-    0% {
-        transform: translateX(0);
-    }
-     100% {
-        transform: translateX(-50%);
-    }
-}
-
 .secondSection {
   display: flex;
-  flex-direction: column;
   
 }
 .container-left {
     display: flex; 
-    flex-direction: column;
     border: 1.5vw solid #925948;
-    flex-wrap: wrap; 
-    width: 100%;
-}
-.container-right {
-  width: 100%;
+    width: 50%;
 }
 .square {
-  width: 60vw ;
-  height: 40vw;
-  bottom: -86vw; 
-      position: relative;
+ display: flex;
+ top: 139vw;
+  padding: 17vw;
+  width: 48vw;
+   align-items: center;
+    position: absolute;
+    overflow: hidden;
   background-color: #925948;
 }
-.shelf-item {
+.flag1{
+  width: 47vw;
+  position: absolute;
+  top: 145vw;
+  left: 2.3vw;
+   z-index: 1;
+}
+.flag2 {
+  width: 47vw;
+  position: absolute;
+  top: 145.1vw;
+  left: 2.3vw;
+   z-index: 2;
+   animation: blur 4s infinite;
+}
+
+.Stairs{
+    width: 20vw;
+  position: absolute;
+  top: 27vw;
+  left: 2.3vw;
+}
+.Ch_st {
+    overflow: hidden; 
+    width: 100vw; 
+    height: 100vw;
+    position: relative; 
+}
+
+.Child_st {
+    position: absolute; 
+     width: 35vw;
+  position: absolute;
+  top: 37vw;
+  left: 18vw; 
+    transform: translateX(-50%); 
+    transition: transform 1s ease; 
+}
+
+.Ch_st:hover .Child_st {
+    transform: translate(-50%, -250px);
+}
+.Child_hed{
+ width: 28vw;
+  position: absolute;
+  top: 96.5vw;
+  left: 20vw;   animation: tilt-shake 3s infinite ; 
+}
+ 
+.Child_leg{
+ width: 28vw;
+  position: absolute;
+  top: 125.8vw;
+  left: 20.7vw;   
+}
+
+.container-right {
+  width: 50%;
+}
+
+.shelf-item1{
     flex: 1; 
     padding: 20vw 0vw;
     border: 1.5vw solid #925948;  
-     width: 50%
+}
+  .Fon1{
+  width: 40vw;
+  position: absolute;
+  top: 50vw;
+  left: 60vw; 
+  opacity: 0;        
+  transition: opacity 0.5s;    
 }
 
+.Fon1:hover {
+  opacity: 1;                   
+}
+
+.Kyb1{
+  width: 12vw;
+  position: absolute;
+  top: 6.3vw;
+  left: 0.7vw;
+   z-index: 1;
+}
+ 
+.Kyb2 {
+  width: 12vw;
+  position: absolute;
+  top: 6.3vw;
+  left: 0.7vw;
+   z-index: 2;
+   animation: blur 5s infinite;
+}
+.Arm{
+ width: 17vw;
+  position: absolute;
+  top: 22.3vw;
+  left: 13vw;   
+    transition: transform 1s ease; 
+}
+.Arm:hover  {
+    transform: translate(25px, 0);
+}
+.Child_bed{
+    width: 25vw;
+  position: absolute;
+  top: 15vw;
+  left: 23.5vw;
+}
 .shelf-item1 {
-  padding: 20vw 0vw;
+  padding: 13vw 0vw;
     position: relative;
     border: 1.5vw solid #925948; 
     }
 .shelf-item2 {
-  padding: 20vw 0vw;
+  padding: 13vw 0vw;
     position: relative;
     border: 1.5vw solid #925948; 
     }
-.shelf-item3 {
-  padding: 20vw 0vw;
-    position: relative;
-    border: 1.5vw solid #925948; 
+    .Book1{
+        width: 12vw;
+  position: absolute;
+  top: 12.1vw;
+  left: 0vw;
     }
-    .shelf-item1 {
-  padding: 20vw 0vw;
-    position: relative;
-    border: 1.5vw solid #925948; 
+    .Book2{
+        width: 3vw;
+  position: absolute;
+  top: 11.5vw;
+  left: 6vw;
+  animation: book 5s infinite ;
     }
+
+     .Pen2{
+        width: 8vw;
+  position: absolute;
+  top: 13vw;
+  left: 14.2vw;
+  transition: transform 1s ease; 
+}
+.Pen2:hover  {
+    transform: translate(0,17px);
+}
+    .Pen1{
+        width: 8vw;
+  position: absolute;
+  top: 19vw;
+  left: 14.2vw;
+    }
+    .Picture1{
+        width: 12vw;
+  position: absolute;
+  top: 10vw;
+  left: 23.5vw;
+    }
+    .Picture2{
+        width: 8vw;
+  position: absolute;
+  top: 15vw;
+  left: 25.5vw;
+  opacity: 0;              
+  transition: opacity 0.5s;    
+}
+
+.Picture2:hover {
+  opacity: 1;                   
+}
+  .Robot1{
+    width: 10vw;
+  position: absolute;
+  top: 8.9vw;
+  left: 37.2vw;
+   z-index: 1; 
+  } 
+  .Robot2{
+    width: 10vw;
+  position: absolute;
+  top: 8.9vw;
+  left: 37.2vw;
+   z-index: 2;
+   animation: blur 5s infinite; 
   }
+.shelf-item3 {
+  padding: 13vw 0vw;
+    position: relative;
+    border: 1.5vw solid #925948; 
+    }
+    .Rebenok1{
+  width: 14vw;
+  position: absolute;
+  top: 7vw;
+  left: 1vw;
+      transition: transform 1s ease; 
+}
+.Rebenok1:hover  {
+    transform: translate(110px, 0);
+    }
+    .Rebenok2{
+  width: 13vw;
+  position: absolute;
+  top: 9.8vw;
+  left: 34.2vw;
+    }
+    .shelf-item4 {
+  padding: 28vw 0vw;
+    position: relative;
+    border: 1.5vw solid #925948; 
+    }
+     .P4_4{
+           width: 45vw;
+  position: absolute;
+  top: 153.5vw;
+  left: 54vw;  
+    }
+    .P4{
+           width: 35vw;
+  position: absolute;
+  top: 132vw;
+  left: 52vw; 
+  animation: P4_4 5s infinite ; 
+    }
+  .text_block_running {
+  margin-top: 20vw;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 5vw;
+  width: 100vw;
+  top: -20vw;
+  background-color: #F5A1C3;
+  color: #122A4C;
+  overflow: hidden;
+}
+.text_block_fear {
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.3%;
+  text-transform: uppercase;
+  animation: line 8s infinite linear;
   
-  @media screen and (min-width: 431pxpx) and (max-width: 768px){
+}
+
+@keyframes line {
+  0%{transform: translate(-10%,0);}
+  100%{transform: translate(-40%,0);}
+}
+}   
+
+ @media screen and (min-width: 431pxpx) and (max-width: 768px){
     .firstSection {
   display: flex;
-  border: 5vw solid #925948;
+  border: 10vw solid #925948;
 }
 
 .train-image {
@@ -149,4 +361,11 @@
     position: relative;
     border: 1.5vw solid #925948; 
     }
+
+.imgages-3 {
+    width: 40%;
+    bottom: 0;
+    left: 10%;
+    z-index: 1;
+}
   }

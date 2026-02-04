@@ -10,23 +10,12 @@ body {
   flex-direction: column;  
   font-family: "Speckqtograph Handwriting", Arial, Helvetica, sans-serif;
 }
-/*body::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url('../images/Fon1.png');
-  width: 1280px;
-  height: 1600px;
-  opacity: 0.2;
-}*/ 
 .firstSection {
   display: flex;
   padding: 0vw 0vw;
   width: 100%;
    align-items: center;
     position: relative;
-    vertical-align: middle;
     overflow: hidden;
   border: 1.5vw solid #925948;
 }
@@ -51,96 +40,269 @@ body {
 .container-left {
     display: flex; 
     border: 1.5vw solid #925948;
-    flex-wrap: wrap; 
     width: 50%;
 }
+.square {
+ display: flex;
+ top: 139vw;
+  padding: 17vw;
+  width: 48vw;
+   align-items: center;
+    position: absolute;
+    overflow: hidden;
+  background-color: #925948;
+}
+.flag1{
+  width: 47vw;
+  position: absolute;
+  top: 145vw;
+  left: 2.3vw;
+   z-index: 1;
+}
+.flag2 {
+  width: 47vw;
+  position: absolute;
+  top: 145.1vw;
+  left: 2.3vw;
+   z-index: 2;
+   animation: blur 4s infinite;
+}
+
+.Stairs{
+    width: 20vw;
+  position: absolute;
+  top: 27vw;
+  left: 2.3vw;
+}
+.Ch_st {
+    overflow: hidden; 
+    width: 100vw; 
+    height: 100vw;
+    position: relative; 
+}
+
+.Child_st {
+    position: absolute; 
+     width: 35vw;
+  position: absolute;
+  top: 37vw;
+  left: 18vw; 
+    transform: translateX(-50%); 
+    transition: transform 1s ease; 
+}
+
+.Ch_st:hover .Child_st {
+    transform: translate(-50%, -250px);
+}
+.Child_hed{
+ width: 28vw;
+  position: absolute;
+  top: 96.5vw;
+  left: 20vw;   animation: tilt-shake 3s infinite ; 
+}
+ 
+.Child_leg{
+ width: 28vw;
+  position: absolute;
+  top: 125.8vw;
+  left: 20.7vw;   
+}
+
 .container-right {
   width: 50%;
 }
-.square {
-  width: 60vw ;
-  height: 40vw;
-  bottom: -86vw; 
-      position: relative;
-  background-color: #925948;
-}
-.flag1 {
-  position: absolute;
-  width: 47vw;
-  left: 1.5vw;
-  margin-top: 45vw;
-   overflow: hidden;
-  transition: transform 5s alternate; 
-}
-.flag1:hover {
-  animation: flag1_color 5s infinite alternate;
-}
-@keyframes flag1_color {
-  0% {filter: hue-rotate(0deg) brightness(1) saturate(1);}
-  25% {filter: hue-rotate(90deg) brightness(1.2) saturate(1.2);}
-  50% {filter: hue-rotate(180deg) brightness(1) saturate(1);}
-  75% {filter: hue-rotate(270deg) brightness(0.8) saturate(0.8);}
-  100% {filter: hue-rotate(360deg) brightness(1) saturate(1);}
-}
-.Child{
-   position: absolute;
-  margin-top: 45vw;
-   overflow: hidden;
-   width: 70vw;  /* Ширина ОДНОГО кадра (например, 50px) */
-  height: 80vw; /* Высота кадра */
-  background-repeat: no-repeat;
-   animation: manual-frames 1s infinite linear; 
-}
-@keyframes manual-frames {
-  /* 6 кадров, каждый занимает примерно 16.66% времени анимации */
-  
-  0% { 
-    background-position: 0px 0px; /* Кадр 1 (Начало) */
-  }
-  16.66% { 
-    background-position: -50px 0px; /* Кадр 2 */
-  }
-  33.32% { 
-    background-position: -100px 0px; /* Кадр 3 */
-  }
-  49.98% { 
-    background-position: -150px 0px; /* Кадр 4 */
-  }
-  66.64% { 
-    background-position: -200px 0px; /* Кадр 5 */
-  }
-  83.3% { 
-    background-position: -250px 0px; /* Кадр 6 */
-  }
-  100% { 
-    background-position: -300px 0px; /* Возврат к началу цикла */
-  }
-}
-.shelf-item {
+
+.shelf-item1{
     flex: 1; 
     padding: 20vw 0vw;
     border: 1.5vw solid #925948;  
 }
+  .Fon1{
+  width: 40vw;
+  position: absolute;
+  top: 50vw;
+  left: 60vw; 
+  opacity: 0;        
+  transition: opacity 0.5s;    
+}
 
+.Fon1:hover {
+  opacity: 1;                   
+}
+
+.Kyb1{
+  width: 12vw;
+  position: absolute;
+  top: 6.3vw;
+  left: 0.7vw;
+   z-index: 1;
+}
+ 
+.Kyb2 {
+  width: 12vw;
+  position: absolute;
+  top: 6.3vw;
+  left: 0.7vw;
+   z-index: 2;
+   animation: blur 5s infinite;
+}
+.Arm{
+ width: 17vw;
+  position: absolute;
+  top: 22.3vw;
+  left: 13vw;   
+    transition: transform 1s ease; 
+}
+.Arm:hover  {
+    transform: translate(25px, 0);
+}
+.Child_bed{
+    width: 25vw;
+  position: absolute;
+  top: 15vw;
+  left: 23.5vw;
+}
 .shelf-item1 {
-  padding: 20vw 0vw;
+  padding: 13vw 0vw;
     position: relative;
     border: 1.5vw solid #925948; 
     }
 .shelf-item2 {
-  padding: 20vw 0vw;
+  padding: 13vw 0vw;
     position: relative;
     border: 1.5vw solid #925948; 
     }
-.shelf-item3 {
-  padding: 20vw 0vw;
-    position: relative;
-    border: 1.5vw solid #925948; 
+    .Book1{
+        width: 12vw;
+  position: absolute;
+  top: 12.1vw;
+  left: 0vw;
     }
-    .shelf-item1 {
-  padding: 20vw 0vw;
-    position: relative;
-    border: 1.5vw solid #925948; 
+    .Book2{
+        width: 3vw;
+  position: absolute;
+  top: 11.5vw;
+  left: 6vw;
+  animation: book 5s infinite ;
     }
 
+     .Pen2{
+        width: 8vw;
+  position: absolute;
+  top: 13vw;
+  left: 14.2vw;
+  transition: transform 1s ease; 
+}
+.Pen2:hover  {
+    transform: translate(0,17px);
+}
+    .Pen1{
+        width: 8vw;
+  position: absolute;
+  top: 19vw;
+  left: 14.2vw;
+    }
+    .Picture1{
+        width: 12vw;
+  position: absolute;
+  top: 10vw;
+  left: 23.5vw;
+    }
+    .Picture2{
+        width: 8vw;
+  position: absolute;
+  top: 15vw;
+  left: 25.5vw;
+  opacity: 0;              
+  transition: opacity 0.5s;    
+}
+
+.Picture2:hover {
+  opacity: 1;                   
+}
+  .Robot1{
+    width: 10vw;
+  position: absolute;
+  top: 8.9vw;
+  left: 37.2vw;
+   z-index: 1; 
+  } 
+  .Robot2{
+    width: 10vw;
+  position: absolute;
+  top: 8.9vw;
+  left: 37.2vw;
+   z-index: 2;
+   animation: blur 5s infinite; 
+  }
+.shelf-item3 {
+  padding: 13vw 0vw;
+    position: relative;
+    border: 1.5vw solid #925948; 
+    }
+    .Rebenok1{
+  width: 14vw;
+  position: absolute;
+  top: 7vw;
+  left: 1vw;
+      transition: transform 1s ease; 
+}
+.Rebenok1:hover  {
+    transform: translate(110px, 0);
+    }
+    .Rebenok2{
+  width: 13vw;
+  position: absolute;
+  top: 9.8vw;
+  left: 34.2vw;
+    }
+    .shelf-item4 {
+  padding: 28vw 0vw;
+    position: relative;
+    border: 1.5vw solid #925948; 
+    }
+     .P4_4{
+           width: 45vw;
+  position: absolute;
+  top: 153.5vw;
+  left: 54vw;  
+    }
+    .P4{
+           width: 35vw;
+  position: absolute;
+  top: 132vw;
+  left: 52vw; 
+  animation: P4_4 5s infinite ; 
+    }
+  .text_block_running {
+  margin-top: 20vw;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 5vw;
+  width: 100vw;
+  top: -20vw;
+  background-color: #F5A1C3;
+  color: #122A4C;
+  overflow: hidden;
+}
+.text_block_fear {
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.3%;
+  text-transform: uppercase;
+  animation: line 8s infinite linear;
+  
+}
+
+@keyframes line {
+  0%{transform: translate(-10%,0);}
+  100%{transform: translate(-40%,0);}
+}
+   
 
